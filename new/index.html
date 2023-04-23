@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Roll a Die</title>
+</head>
+<body>
+    <h1>YOU DID IT BITCH!</h1>
+    <button onclick="rollDie()">Roll</button>
+    <h3 id="current-roll"></h3>
+    <table id="roll-history">
+        <thead>
+            <tr>
+                <th>Number</th>
+                <th>Date</th>
+            </tr>
+        </thead>
+        <tbody id="roll-history-body">
+        </tbody>
+    </table>
+    <h2>Total: <span id="running-total">0</span></h2>
+            <!-- Add the following lines after the <h2> element -->
+        <button onclick="addToTotal(1)">+1</button>
+        <button onclick="subtractFromTotal(1)">-1</button>
+    <div id="confetti" class="hidden"></div>
+</body>
+</html>
