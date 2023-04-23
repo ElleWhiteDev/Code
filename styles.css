@@ -62,7 +62,7 @@ th {
 @media only screen and (max-width: 600px) {
     #confetti {
         background-size: 200%;
-        top: 35%;
+        top: 25%;
         background-position: top;
     }
 }
