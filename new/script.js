@@ -47,17 +47,23 @@ function hideConfetti() {
 
 function addToTotal(value) {
 	const currentTotal = parseInt(runningTotalElement.textContent);
-	runningTotalElement.textContent = currentTotal + value;
+	const newTotal = currentTotal + value;
+	runningTotalElement.textContent = newTotal;
+	localStorage.setItem("total", newTotal);
 }
 
 function subtractFromTotal(value) {
 	const currentTotal = parseInt(runningTotalElement.textContent);
-	runningTotalElement.textContent = currentTotal - value;
+	const newTotal = currentTotal - value;
+	runningTotalElement.textContent = newTotal;
+	localStorage.setItem("total", newTotal);
 }
 
 function updateRunningTotal(roll) {
 	const currentTotal = parseInt(runningTotalElement.textContent);
-	runningTotalElement.textContent = currentTotal + roll;
+	const newTotal = currentTotal + roll;
+	runningTotalElement.textContent = newTotal;
+	localStorage.setItem("total", newTotal);
 }
 
 const storedTotal = localStorage.getItem("total");
